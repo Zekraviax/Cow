@@ -147,5 +147,6 @@ public class CowModEntityModel extends EntityModel<CowModEntity> {
 
     @Override
     public void setAngles(CowModEntity entity, float limbAngle, float limbDistance, float animationProgress, float headYaw, float headPitch) {
+
     }
 }

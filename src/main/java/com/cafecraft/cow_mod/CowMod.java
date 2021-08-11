@@ -15,11 +15,11 @@ public class CowMod implements ModInitializer {
     public static final EntityType<CowModEntity> COW_MOD_ENTITY = Registry.register(
             Registry.ENTITY_TYPE,
             new Identifier("cow_mod", "cow"),
-            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, CowModEntity::new).dimensions(EntityDimensions.fixed(2.1F, 2.1F)).build()
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, CowModEntity::new).dimensions(EntityDimensions.fixed(1.F, 1.F)).build()
     );
 
     @Override
     public void onInitialize() {
-        FabricDefaultAttributeRegistry.register(COW_MOD_ENTITY, CowModEntity.createMobAttributes());
+        FabricDefaultAttributeRegistry.register(COW_MOD_ENTITY, CowModEntity.createCowAttributes());
     }
 }
