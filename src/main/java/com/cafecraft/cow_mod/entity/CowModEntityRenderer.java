@@ -17,7 +17,7 @@ public class CowModEntityRenderer extends MobEntityRenderer<CowModEntity, CowMod
     }
 
     protected void scale(CowModEntity cowModEntity, MatrixStack matrixStack, float amount) {
-        matrixStack.scale(2, 2, 2);
+        matrixStack.scale(1.8F, 1.8F, 1.8F);
         super.scale(cowModEntity, matrixStack, 1.0f);
     }
 
